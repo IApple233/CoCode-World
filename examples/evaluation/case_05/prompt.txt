@@ -1,0 +1,15 @@
+Generate a synchronized two-view RGB video in the visual style of <Picture 1>. Show agent_000's camera on the left and agent_001's camera on the right. Preserve the rendering style, materials, colors, lighting and character identities from <Picture 1> throughout the clip, and follow the camera movement and object trajectories in <Video 1>.
+Scene description: Overall summary:
+Two players, agent_000 and agent_001, engage in a physical confrontation on a dirt road at night. The interaction involves close-range grappling, striking, and grappling maneuvers, with the camera following the movement of the characters. The scene uses Stylized 3D anime render. Nighttime ambient lighting with warm artificial light sources from distant buildings and a red glow from the background tower. agent_000: Female character with long blonde hair in twin tails, wearing a blue and white sailor-style outfit with a red bow, dark leggings, and red boots. agent_001: Female character with long dark hair, wearing a white top, red skirt, dark leggings, and red boots.
+
+Left-view timeline (camera owner: agent_000):
+[0.00–1.00s] agent_000 and agent_001 stand close together on the dirt road, facing each other in a confrontational stance.
+[1.00–2.00s] agent_001 performs a high kick towards agent_000, who bends forward to evade the strike.
+[2.00–4.00s] agent_000 and agent_001 separate slightly and circle each other, maintaining a combat-ready posture.
+[4.00–5.17s] agent_001 closes the distance and grabs agent_000, initiating a grappling exchange.
+
+Right-view timeline (camera owner: agent_001):
+[0.00–1.00s] agent_000 and agent_001 stand close together on the dirt road, facing each other in a confrontational stance.
+[1.00–2.00s] agent_001 performs a high kick towards agent_000, who bends forward to evade the strike.
+[2.00–4.00s] agent_000 and agent_001 separate slightly and circle each other, maintaining a combat-ready posture.
+[4.00–5.17s] agent_001 closes the distance and grabs agent_000, initiating a grappling exchange.

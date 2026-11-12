@@ -1,0 +1,9 @@
+Generate a synchronized two-view RGB video in the visual style of <Picture 1>. Show agent_000's camera on the left and agent_001's camera on the right. Preserve the rendering style, materials, colors, lighting and character identities from <Picture 1> throughout the clip, and follow the camera movement and object trajectories in <Video 1>.
+Scene description: Overall summary:
+Two players ride a single jet ski across a body of water at dusk, moving from open water toward a rocky shoreline. The camera follows the vehicle from behind as it travels steadily, with the rocky cliff becoming more prominent on the right side of the frame. The scene uses 2D anime-style illustration with bold outlines and flat shading. Warm sunset glow with orange and purple sky reflections on the water. agent_000: Character with dark hair wearing a light-colored sleeveless top. agent_001: Character with blonde hair wearing a red top and red shorts.
+
+Left-view timeline (camera owner: agent_000):
+[0.00–5.17s] agent_000 and agent_001 ride vehicle_001 across the water, moving from the center of the frame toward the rocky shoreline on the right.
+
+Right-view timeline (camera owner: agent_001):
+[0.00–5.17s] agent_000 and agent_001 ride vehicle_001 across the water, moving from the center of the frame toward the rocky shoreline on the right.

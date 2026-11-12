@@ -1,0 +1,16 @@
+# Install the CUDA-compatible PyTorch build for your system first (see README).
+torch==2.8.0
+torchvision==0.23.0
+transformers==5.6.0
+peft==0.20.0
+accelerate==1.13.0
+huggingface-hub==1.11.0
+safetensors==0.7.0
+numpy==2.4.4
+Pillow==12.2.0
+av==17.0.1
+einops==0.8.2
+imageio==2.37.3
+imageio-ffmpeg==0.6.0
+tqdm>=4.66
+sentencepiece>=0.2

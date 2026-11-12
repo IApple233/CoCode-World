@@ -1,0 +1,11 @@
+Generate a synchronized two-view RGB video in the visual style of <Picture 1>. Show agent_000's camera on the left and agent_001's camera on the right. Preserve the rendering style, materials, colors, lighting and character identities from <Picture 1> throughout the clip, and follow the camera movement and object trajectories in <Video 1>.
+Scene description: Overall summary:
+Two players run across a sandy beach area at dusk. agent_000 runs from the sand towards a paved road, while agent_001 runs along the beach and then onto the pavement. The scene uses 2D anime cel-shaded. Warm sunset glow with long shadows and pink-orange sky. agent_000: Male character with spiky blonde hair wearing an orange and black jumpsuit with a forehead protector and black sandals. agent_001: Male character with spiky white hair wearing a green flak jacket over a dark blue shirt, dark pants, and a forehead protector.
+
+Left-view timeline (camera owner: agent_000):
+[0.00–5.17s] agent_000 runs continuously across the sandy terrain towards the paved road in the background.
+[0.00–5.17s] agent_001 runs in the distance, moving from the right side of the screen towards the left, staying ahead of agent_000.
+
+Right-view timeline (camera owner: agent_001):
+[0.00–5.17s] agent_001 runs along the beach, initially facing the ocean, then turning to run parallel to the road and eventually onto the pavement.
+[1.00–2.50s] agent_000 is visible in the distance running across the sand towards the right side of the frame.

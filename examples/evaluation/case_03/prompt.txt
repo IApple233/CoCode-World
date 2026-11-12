@@ -1,0 +1,14 @@
+Generate a synchronized two-view RGB video in the visual style of <Picture 1>. Show agent_000's camera on the left and agent_001's camera on the right. Preserve the rendering style, materials, colors, lighting and character identities from <Picture 1> throughout the clip, and follow the camera movement and object trajectories in <Video 1>.
+Scene description: Overall summary:
+In a rural outdoor setting with a dirt road and large boulders, agent_000 climbs onto a rock and then jumps down to the ground. Agent_001 walks along the road towards agent_000, and the two characters meet and stand together near the roadside. The scene uses 2D anime-style illustration with flat colors and clean outlines. Bright, warm daylight casting distinct shadows. agent_000: A yellow, bipedal creature with long pointed ears tipped in black, red circular cheeks, and brown stripes on its back. agent_001: A brown, bipedal creature with long ears, a thick white ruff around its neck, and a large fluffy tail.
+
+Left-view timeline (camera owner: agent_000):
+[0.00–0.75s] agent_000 stands on a large boulder, facing away from the camera, and begins to climb higher onto the rock.
+[0.75–2.00s] agent_000 stands on top of the boulder, looking out towards the road and the distance.
+[2.00–2.75s] agent_000 jumps down from the boulder to the dirt ground, landing in a crouched position.
+[2.75–5.17s] agent_000 walks along the dirt road towards agent_001, who is walking towards agent_000 from the distance; the two characters meet and stand close together.
+
+Right-view timeline (camera owner: agent_001):
+[0.00–2.00s] agent_001 walks along the dirt road towards the camera, while agent_000 is visible in the background climbing on a large boulder.
+[2.00–3.25s] agent_001 continues walking along the road, while agent_000 jumps down from the boulder in the background and stands on the ground.
+[3.25–5.17s] agent_001 and agent_000 walk towards each other on the road and meet, standing close together near the roadside.

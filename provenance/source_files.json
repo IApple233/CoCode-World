@@ -1,0 +1,278 @@
+{
+  "train_h3_ref_video_lora.py": {
+    "source_sha256": "7690439335d1b6086b0534605e3c708d5da59480245fddacb29fdb48a554f837",
+    "run_recorded_sha256": "7690439335d1b6086b0534605e3c708d5da59480245fddacb29fdb48a554f837",
+    "matches_recorded_training_source": true,
+    "release_edits": [
+      "Use a repository-relative default model directory."
+    ],
+    "release_sha256": "f545cae457f6f57ef48ccfed583c63aacf16c5b999d0a8c7c35e67955a276492"
+  },
+  "utility/cache_h3_processed720.py": {
+    "source_sha256": "f464270ed5f6390ce46034d5be760b6c3c7c1101f9de4fd07c10af7e5d78ade8",
+    "run_recorded_sha256": "f464270ed5f6390ce46034d5be760b6c3c7c1101f9de4fd07c10af7e5d78ade8",
+    "matches_recorded_training_source": true,
+    "release_edits": [
+      "Use a repository-relative default model directory."
+    ],
+    "release_sha256": "2a30da987f5ba34a496318e88953c04d6aef4984f15cc56e0087b0916d3cfe23"
+  },
+  "utility/h3_decfg_adapter.py": {
+    "source_sha256": "ccd3f59f3f780a79415c35af0a00736ca166e1f3489a7a52ffb662bf3271f9c6",
+    "run_recorded_sha256": "ccd3f59f3f780a79415c35af0a00736ca166e1f3489a7a52ffb662bf3271f9c6",
+    "matches_recorded_training_source": true,
+    "release_edits": [],
+    "release_sha256": "ccd3f59f3f780a79415c35af0a00736ca166e1f3489a7a52ffb662bf3271f9c6"
+  },
+  "utility/h3_ref_video.py": {
+    "source_sha256": "c5cde15c5e2404f215524a595cf65c135d9bb7c3965e0ea21b21a7efef58275f",
+    "run_recorded_sha256": "c5cde15c5e2404f215524a595cf65c135d9bb7c3965e0ea21b21a7efef58275f",
+    "matches_recorded_training_source": true,
+    "release_edits": [],
+    "release_sha256": "c5cde15c5e2404f215524a595cf65c135d9bb7c3965e0ea21b21a7efef58275f"
+  },
+  "utility/h3_ref_video_data.py": {
+    "source_sha256": "eda34b5d2a361ee16a51afc40dc07456b4bc88008124fb65804657f9c9b109c2",
+    "run_recorded_sha256": "eda34b5d2a361ee16a51afc40dc07456b4bc88008124fb65804657f9c9b109c2",
+    "matches_recorded_training_source": true,
+    "release_edits": [],
+    "release_sha256": "eda34b5d2a361ee16a51afc40dc07456b4bc88008124fb65804657f9c9b109c2"
+  },
+  "utility/h3_ref_video_checkpoint.py": {
+    "source_sha256": "f8431409f67f5ab0360561913b2eb08ef89565dee042b77700b46415fe53fefc",
+    "run_recorded_sha256": "f8431409f67f5ab0360561913b2eb08ef89565dee042b77700b46415fe53fefc",
+    "matches_recorded_training_source": true,
+    "release_edits": [],
+    "release_sha256": "f8431409f67f5ab0360561913b2eb08ef89565dee042b77700b46415fe53fefc"
+  },
+  "utility/h3_ref_video_prompt.py": {
+    "source_sha256": "0a2983ab0becd2115c3d737cf5cfbe67199c15b863978558c43d61e847891090",
+    "run_recorded_sha256": "0a2983ab0becd2115c3d737cf5cfbe67199c15b863978558c43d61e847891090",
+    "matches_recorded_training_source": true,
+    "release_edits": [
+      "Add explicit upstream-license attribution."
+    ],
+    "release_sha256": "4e98e2a24d259466bb069a7f69f1fb307a1c5983464579122e0c84bd2a6b3664"
+  },
+  "utility/h3_proxy_reference.py": {
+    "source_sha256": "bbc8256e5d4f427fc6df50a4f28c5fc1a7d2764ea01e2b5eb12cd9fb27713f86",
+    "run_recorded_sha256": "bbc8256e5d4f427fc6df50a4f28c5fc1a7d2764ea01e2b5eb12cd9fb27713f86",
+    "matches_recorded_training_source": true,
+    "release_edits": [],
+    "release_sha256": "bbc8256e5d4f427fc6df50a4f28c5fc1a7d2764ea01e2b5eb12cd9fb27713f86"
+  },
+  "utility/h3_training_schedule.py": {
+    "source_sha256": "2e3e88fff0404e8d8d32f983986e26b051d0cab5aed889ce3da9af5d31490605",
+    "run_recorded_sha256": "2e3e88fff0404e8d8d32f983986e26b051d0cab5aed889ce3da9af5d31490605",
+    "matches_recorded_training_source": true,
+    "release_edits": [
+      "Use repository-relative evaluation package default."
+    ],
+    "release_sha256": "7f9f4bcfbfdab90596eed7bd7cd77cf095b51a20b66ef321102623580c9abeb9"
+  },
+  "utility/measure_h3_processed720.py": {
+    "source_sha256": "77e8d9592b11e101995970d72f2024a99ae9cc4cbb32a1b51ecfaa36670d9207",
+    "run_recorded_sha256": "77e8d9592b11e101995970d72f2024a99ae9cc4cbb32a1b51ecfaa36670d9207",
+    "matches_recorded_training_source": true,
+    "release_edits": [
+      "Use a repository-relative default model directory."
+    ],
+    "release_sha256": "a3f2a4a24b9fa7cdfdee2980f4587a0de9c1834bce3493c1caf668f86e74178a"
+  },
+  "utility/cache_h3_ref_video.py": {
+    "source_sha256": "9437c0353f92c5fe1719ea2025e440942db21455abe1fd91c11415b6b89b428f",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [
+      "Use a repository-relative default model directory."
+    ],
+    "release_sha256": "b6da49386313b4126d19ad5564305e1249cf538e17b701140a4bfe68eaa3176e"
+  },
+  "utility/h3_ref_video_reference.py": {
+    "source_sha256": "19d5a9c05014eea6a1efac8141b5b7c6bcfeb5b00f1a1acdb1331c353adcfcde",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "19d5a9c05014eea6a1efac8141b5b7c6bcfeb5b00f1a1acdb1331c353adcfcde"
+  },
+  "verification/local_diffusers.py": {
+    "source_sha256": "ae6ac9d4097ae91d695b57f006acf3243a0d69227cad95ff8b87e66d43b983a3",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "ae6ac9d4097ae91d695b57f006acf3243a0d69227cad95ff8b87e66d43b983a3"
+  },
+  "verification/hf_hub_compat.py": {
+    "source_sha256": "2cf90d36826f6421d93781c80e5ebe6afdce20c25f7ab572e79c244d4cc07e30",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "2cf90d36826f6421d93781c80e5ebe6afdce20c25f7ab572e79c244d4cc07e30"
+  },
+  "utility/h3_distill/packed_video.py": {
+    "source_sha256": "d3d50048b5fdfffb139ee8e99f0cbdb2a80a51f60c313347aaaa8e29d98aeb4c",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "d3d50048b5fdfffb139ee8e99f0cbdb2a80a51f60c313347aaaa8e29d98aeb4c"
+  },
+  "utility/h3_distill/checkpoint.py": {
+    "source_sha256": "a57397c23b7e4abd7f2ef27d9c2b3b48e3075c528aa763c92734f9215d200465",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "a57397c23b7e4abd7f2ef27d9c2b3b48e3075c528aa763c92734f9215d200465"
+  },
+  "utility/h3_distill/consistency.py": {
+    "source_sha256": "a19f97cd3d2bada9ce8c7c139392e2830a9ef22cded5e85d531c5339464b9e32",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "a19f97cd3d2bada9ce8c7c139392e2830a9ef22cded5e85d531c5339464b9e32"
+  },
+  "utility/h3_distill/dcm.py": {
+    "source_sha256": "25013620cbd78796951c9bd681443363cc03d8f43e15a3a3e32728f118f6028f",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "25013620cbd78796951c9bd681443363cc03d8f43e15a3a3e32728f118f6028f"
+  },
+  "utility/h3_distill/dmd_checkpoint.py": {
+    "source_sha256": "ae9d0fba54030f9aee4ae51559c8f8f74c3f33cb6c8ceff7bda791ceeb3f9412",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "ae9d0fba54030f9aee4ae51559c8f8f74c3f33cb6c8ceff7bda791ceeb3f9412"
+  },
+  "utility/h3_distill/role_adapters.py": {
+    "source_sha256": "ffef22d1a6e27c55674e172967bd6bf8d75da0583bf116ca7403d65a4831d935",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "ffef22d1a6e27c55674e172967bd6bf8d75da0583bf116ca7403d65a4831d935"
+  },
+  "utility/h3_distill/rcm_adapter.py": {
+    "source_sha256": "c2d3d7c66ad5c19de739bdb453ef11823d422b5a6a66cbb3b283cfa403d299ca",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "c2d3d7c66ad5c19de739bdb453ef11823d422b5a6a66cbb3b283cfa403d299ca"
+  },
+  "utility/h3_distill/dmd.py": {
+    "source_sha256": "39b8afac1bb414922ab34de50a28ec6169ad7fb014129e864f7befe52955f52e",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "39b8afac1bb414922ab34de50a28ec6169ad7fb014129e864f7befe52955f52e"
+  },
+  "utility/h3_distill/__init__.py": {
+    "source_sha256": "839c139a557c42a93226e5bb182290641e0611ffe11ad3a73a687bf395e2ae7e",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "839c139a557c42a93226e5bb182290641e0611ffe11ad3a73a687bf395e2ae7e"
+  },
+  "utility/h3_distill/schedules.py": {
+    "source_sha256": "95948e9e228cdb33139cc6defef2cb78758ac8abb1077d28ab759aee32e14366",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "95948e9e228cdb33139cc6defef2cb78758ac8abb1077d28ab759aee32e14366"
+  },
+  "utility/h3_distill/dfd.py": {
+    "source_sha256": "78e3fcc1d3a4d214e6320995e51468f186a38e3db8f823070ba0ba91563bf331",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "78e3fcc1d3a4d214e6320995e51468f186a38e3db8f823070ba0ba91563bf331"
+  },
+  "utility/h3_distill/sampler.py": {
+    "source_sha256": "6dbac2d63097c0d7b72beed8c59a992ca10d2301887bb15dc74d04b94109b8b8",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "6dbac2d63097c0d7b72beed8c59a992ca10d2301887bb15dc74d04b94109b8b8"
+  },
+  "utility/h3_distill/attention.py": {
+    "source_sha256": "3aa9d7dea9cdc33b34e13079b8e9ce64c015773eb20fbfd85081178314844909",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "3aa9d7dea9cdc33b34e13079b8e9ce64c015773eb20fbfd85081178314844909"
+  },
+  "utility/h3_distill/data/cached_video.py": {
+    "source_sha256": "fd3f531364dc91e270f3b89ea0e20ab9f622f4e7e4c546fe603d5f9d195b92e0",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "fd3f531364dc91e270f3b89ea0e20ab9f622f4e7e4c546fe603d5f9d195b92e0"
+  },
+  "utility/h3_distill/data/__init__.py": {
+    "source_sha256": "603ce64f369406c1c568b845ceeb849aa89bbf2d4b700c7e996fee653e382838",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [],
+    "release_sha256": "603ce64f369406c1c568b845ceeb849aa89bbf2d4b700c7e996fee653e382838"
+  },
+  "data/worldscene_h3_ref_depth_v1/tools/common.py": {
+    "source_sha256": "a91aefddb4d4d29beaea9e9c0fb1f77081578e50db4e65b7ad834ae870ad9399",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [
+      "Retain only atomic I/O and hash helpers used by caching.",
+      "Remove extra blank lines at end of file."
+    ],
+    "release_sha256": "5ec69a821d92e12f0c3464c873b4811491eb1e3beeca36d9503906d0f14627ba"
+  },
+  "inference/rollout_long.py": {
+    "source_sha256": "0bc117af3a1f67af3588390f4c3f7293b5f11ac0edbe6886cad99f6bd9c05859",
+    "release_edits": [
+      "Relocate inference entrypoints to the public repository.",
+      "Use selected case count and published checkpoint fingerprints instead of private training-manifest and 100-case dependencies; default to one node."
+    ],
+    "release_sha256": "1bc852d8d476fb812dd100185c45ccec5b320d0f0cce5f819df7125b08b8bd05"
+  },
+  "inference/long_model_helpers.py": {
+    "source_sha256": "c2384c7e42e3bef3513f143a166703807a7a126b949f7c5609114a21a43f1730",
+    "release_edits": [
+      "Relocate inference entrypoints to the public repository."
+    ],
+    "release_sha256": "c2384c7e42e3bef3513f143a166703807a7a126b949f7c5609114a21a43f1730"
+  },
+  "utility/prompts/h3_ref_video_multiplayer_system.txt": {
+    "source_sha256": "d87884dfc5823b70fc468e7a0118eb54734fddd2eb595cda037a34541d51f89f",
+    "run_recorded_sha256": "d87884dfc5823b70fc468e7a0118eb54734fddd2eb595cda037a34541d51f89f",
+    "matches_recorded_training_source": true,
+    "release_edits": [],
+    "release_sha256": "d87884dfc5823b70fc468e7a0118eb54734fddd2eb595cda037a34541d51f89f"
+  },
+  "verification/test_h3_decfg_adapter.py": {
+    "source_sha256": "3429188e8060737ebae0af30bdd060b0153b1114744c3255a1c40a47e860b274",
+    "run_recorded_sha256": "3429188e8060737ebae0af30bdd060b0153b1114744c3255a1c40a47e860b274",
+    "matches_recorded_training_source": true,
+    "release_edits": [
+      "Use a repository-relative default model directory."
+    ],
+    "release_sha256": "b52e5ce0faa1cea6ee2833d4e680e8d581e45e2a6f28eecc408c95d3225fe661"
+  },
+  "verification/test_h3_training_schedule.py": {
+    "source_sha256": "345b4320d702128f9fe10783002eacf0aa03d3abccb12238140a3014a06873cb",
+    "run_recorded_sha256": "345b4320d702128f9fe10783002eacf0aa03d3abccb12238140a3014a06873cb",
+    "matches_recorded_training_source": true,
+    "release_edits": [
+      "Exclude the private SSH-cluster orchestration test.",
+      "Remove extra blank lines at end of file."
+    ],
+    "release_sha256": "deab5cbb832cabe50c9ae2472232152fc772bd639413530144b45072b1f27b9a"
+  },
+  "infer_h3_ref_video_lora.py": {
+    "source_sha256": "5a668d2b18aea51edea8f2c885cd3688bc905a6e591cec4519c52a6689e4166f",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [
+      "Extract unchanged decoder, video-output, component-hash and LoRA-pattern helpers from the established inference entrypoint; omit its unrelated command-line runner.",
+      "Remove extra blank lines at end of file."
+    ],
+    "release_sha256": "5bbadb9ee9bd03ff6125e039ed7f76a3bc421263f6dd394ec7b471b17e6d0496"
+  }
+}

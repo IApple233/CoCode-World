@@ -1,0 +1,9 @@
+Generate a synchronized two-view RGB video in the visual style of <Picture 1>. Show agent_000's camera on the left and agent_001's camera on the right. Preserve the rendering style, materials, colors, lighting and character identities from <Picture 1> throughout the clip, and follow the camera movement and object trajectories in <Video 1>.
+Scene description: Overall summary:
+Two players, agent_000 and agent_001, are driving a muscle car along a desert highway. The vehicle moves steadily forward, staying near the right shoulder of the road. The camera tracks the car from behind in both views, showing the desert landscape and distant mountains. The scene has stylized low-poly 3D render with flat shading and a warm, saturated color palette. The reference has warm, low-angle sunset lighting casting long shadows and highlighting the orange sky.
+
+Left-view timeline (camera owner: agent_000):
+[0.00–5.17s] agent_000 and agent_001 drive vehicle_001 forward along the right side of a desert highway.
+
+Right-view timeline (camera owner: agent_001):
+[0.00–5.17s] agent_000 and agent_001 drive vehicle_001 forward along the right side of a desert highway.

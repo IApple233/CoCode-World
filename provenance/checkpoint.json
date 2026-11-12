@@ -1,0 +1,31 @@
+{
+  "checkpoint_step": 4000,
+  "base_model": "MiniMaxAI/MiniMax-H3",
+  "base_partition": "transformer_ref",
+  "training_preset": "DiffSynth-Studio/MiniMax-H3-TrainingAdapter",
+  "inference_weights": "ema.safetensors",
+  "training_weights": "lora.safetensors",
+  "tensor_files_preserved_byte_for_byte": true,
+  "original_trainer_state_sha256": "e94a5028d85b839114494fbf4105c3025fdc897eeb1074aca1fc6e760ad27b7d",
+  "metadata_normalization": "Only local filesystem paths in trainer_state.json have been replaced with portable paths.",
+  "payloads": {
+    "ema.safetensors": {
+      "bytes": 1383687680,
+      "sha256": "9d4e0524ee2b9203c2711f2c0b2a133e17d9ea6cb1280aa9974150f0ba7a038c"
+    },
+    "lora.safetensors": {
+      "bytes": 691889848,
+      "sha256": "e0d4a3cb1c8cb8cb8ef36cefeb45ecc164556404f4003ec39b1af8f435ca602c"
+    },
+    "optimizer.pt": {
+      "bytes": 1384124083,
+      "sha256": "cfae773db2796b4973eb28d37221eb1ff89f2c3dccdcc09e1a55a2c2b25ff4b1"
+    },
+    "rng_state.pt": {
+      "bytes": 6901,
+      "sha256": "e4fe9530c60967ab99cab3175013b526f5ec56bbd7e358fe69d9e8f2209f5d71"
+    }
+  },
+  "huggingface_repository": "iapple1/CoCode-World-Model",
+  "huggingface_revision": "39be9df12b0b5efc7700215eb4aba115873b3627"
+}

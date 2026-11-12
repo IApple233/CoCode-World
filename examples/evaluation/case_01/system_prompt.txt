@@ -1,0 +1,56 @@
+AWM_PROXY_CONTROL. Generate an RGB video in the visual style of <Picture 1> from two visual references.
+<Picture 1> is the RGB appearance anchor for this clip. <Video 1> is the proxy
+control video. Both references and the output have a horizontal two-view split
+screen: agent_000's camera on the left and agent_001's camera on the right.
+Keep the two cameras separate, preserve their order and the center seam, and
+render the same shared world and events consistently in both views.
+
+<Picture 1> defines the output's visual style, character identities, faces, hair,
+clothing, vehicles, surface materials, textures, colors, lighting and atmosphere.
+Maintain its rendering style and level of stylization throughout the clip,
+including newly revealed subjects and scenery. Match each half to its
+corresponding half in <Picture 1>. Keep the same person's appearance consistent
+across both cameras, including when that person crosses the screen or is seen
+from behind. Subjects not visible in the anchor must fit its world and art
+direction. The anchor depicts the opening of this clip; later camera positions,
+object positions and trajectories come from <Video 1>.
+
+<Video 1> supplies coarse spatial layout, camera movement, object position,
+occupied scale, root orientation and motion over time. Its flat colors and
+simplified shapes are control annotations, not the appearance of the output.
+In BOTH views, a blue human proxy identifies agent_000 and a red human proxy
+identifies agent_001. These identity colors remain fixed regardless of whose
+camera is shown: either half can contain both blue and red people. Yellow human
+proxies indicate NPCs. Darker backs and brighter fronts indicate coarse facing
+direction, not clothing or illumination. Black denotes ground; gray denotes
+buildings and obstacles; green denotes vegetation; pink wire boxes indicate
+vehicles. Interpret colors
+together with object shape and context. None of these annotations sets the
+character's clothing, vehicle paint, building color or other output material.
+
+Human proxies provide root motion and coarse orientation, not articulated limb
+poses or character design. Render complete characters with body motion
+appropriate to the reference style and scene. A human proxy may translate with
+fixed limbs; this rigid translation encodes a trajectory, not a gait to imitate.
+Preserve its root path, speed, timing and coarse facing direction. For walking or
+running described by the scene, generate natural alternating steps, leg and knee
+articulation, appropriate arm swing, weight transfer and foot contact with the
+ground. Match the gait to the travel speed and action, including starts, stops
+and turns; avoid moving a frozen standing pose along the ground, skating or foot
+sliding during ordinary locomotion. Standing, riding in a vehicle, jumping,
+falling and deliberate sliding must retain their own action-appropriate motion;
+translation alone does not imply walking. Use the scene description for action
+and gait, while retaining the proxy's root trajectory and the appearance of
+<Picture 1>. Do not copy the proxy's simplified body shapes or exposed control
+rigs. Vehicle boxes specify location, heading and
+occupied size; render complete vehicles with the appearance and materials of
+<Picture 1>. Reconstruct roads, buildings, vegetation and other scenery in the
+anchor's visual style using the proxy's coarse layout.
+Do not reproduce proxy colors, flat segmentation surfaces, wire boxes or other
+control visualization artifacts in the generated video.
+
+When the references differ, use <Video 1> for camera, layout and root-trajectory
+control, without treating its rigid limbs as articulation constraints, and use
+<Picture 1> for identity and appearance. Follow any scene description within
+those constraints. Continue the clip smoothly without cuts, swapping the two
+cameras, duplicating a viewpoint or resetting to the anchor's camera position.
