@@ -1,278 +1,238 @@
 {
-  "train_h3_ref_video_lora.py": {
+  "cocode_world/training.py": {
     "source_sha256": "7690439335d1b6086b0534605e3c708d5da59480245fddacb29fdb48a554f837",
     "run_recorded_sha256": "7690439335d1b6086b0534605e3c708d5da59480245fddacb29fdb48a554f837",
     "matches_recorded_training_source": true,
     "release_edits": [
-      "Use a repository-relative default model directory."
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
     ],
-    "release_sha256": "f545cae457f6f57ef48ccfed583c63aacf16c5b999d0a8c7c35e67955a276492"
+    "release_sha256": "ffbddfc70a94bb13cf611440f9a01886f8e51c0554e6f1294f625bd4c3f04d87"
   },
-  "utility/cache_h3_processed720.py": {
-    "source_sha256": "f464270ed5f6390ce46034d5be760b6c3c7c1101f9de4fd07c10af7e5d78ade8",
-    "run_recorded_sha256": "f464270ed5f6390ce46034d5be760b6c3c7c1101f9de4fd07c10af7e5d78ade8",
-    "matches_recorded_training_source": true,
-    "release_edits": [
-      "Use a repository-relative default model directory."
-    ],
-    "release_sha256": "2a30da987f5ba34a496318e88953c04d6aef4984f15cc56e0087b0916d3cfe23"
-  },
-  "utility/h3_decfg_adapter.py": {
-    "source_sha256": "ccd3f59f3f780a79415c35af0a00736ca166e1f3489a7a52ffb662bf3271f9c6",
-    "run_recorded_sha256": "ccd3f59f3f780a79415c35af0a00736ca166e1f3489a7a52ffb662bf3271f9c6",
-    "matches_recorded_training_source": true,
-    "release_edits": [],
-    "release_sha256": "ccd3f59f3f780a79415c35af0a00736ca166e1f3489a7a52ffb662bf3271f9c6"
-  },
-  "utility/h3_ref_video.py": {
+  "cocode_world/model.py": {
     "source_sha256": "c5cde15c5e2404f215524a595cf65c135d9bb7c3965e0ea21b21a7efef58275f",
     "run_recorded_sha256": "c5cde15c5e2404f215524a595cf65c135d9bb7c3965e0ea21b21a7efef58275f",
     "matches_recorded_training_source": true,
-    "release_edits": [],
-    "release_sha256": "c5cde15c5e2404f215524a595cf65c135d9bb7c3965e0ea21b21a7efef58275f"
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
+    ],
+    "release_sha256": "6710635c2b034f135c5ffa5b2767ed3b4871ed342db2caf4311539ebe176a7bd"
   },
-  "utility/h3_ref_video_data.py": {
+  "cocode_world/dataset.py": {
     "source_sha256": "eda34b5d2a361ee16a51afc40dc07456b4bc88008124fb65804657f9c9b109c2",
     "run_recorded_sha256": "eda34b5d2a361ee16a51afc40dc07456b4bc88008124fb65804657f9c9b109c2",
     "matches_recorded_training_source": true,
-    "release_edits": [],
-    "release_sha256": "eda34b5d2a361ee16a51afc40dc07456b4bc88008124fb65804657f9c9b109c2"
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
+    ],
+    "release_sha256": "3db6747cc4e3dd63225d9b52aacf90da52420d238ef08d870d35e81307859000"
   },
-  "utility/h3_ref_video_checkpoint.py": {
+  "cocode_world/checkpoint.py": {
     "source_sha256": "f8431409f67f5ab0360561913b2eb08ef89565dee042b77700b46415fe53fefc",
     "run_recorded_sha256": "f8431409f67f5ab0360561913b2eb08ef89565dee042b77700b46415fe53fefc",
     "matches_recorded_training_source": true,
-    "release_edits": [],
-    "release_sha256": "f8431409f67f5ab0360561913b2eb08ef89565dee042b77700b46415fe53fefc"
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
+    ],
+    "release_sha256": "c72bb2ec99f48f247297ba58a3adda07774dd6369e3e8680bf76395a3bde00fd"
   },
-  "utility/h3_ref_video_prompt.py": {
+  "cocode_world/prompting.py": {
     "source_sha256": "0a2983ab0becd2115c3d737cf5cfbe67199c15b863978558c43d61e847891090",
     "run_recorded_sha256": "0a2983ab0becd2115c3d737cf5cfbe67199c15b863978558c43d61e847891090",
     "matches_recorded_training_source": true,
     "release_edits": [
-      "Add explicit upstream-license attribution."
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
     ],
-    "release_sha256": "4e98e2a24d259466bb069a7f69f1fb307a1c5983464579122e0c84bd2a6b3664"
+    "release_sha256": "a284cf0cbafb1e39d448123bd200e96c3fc7ad044adcdf7184a968c620bac8ad"
   },
-  "utility/h3_proxy_reference.py": {
+  "cocode_world/proxy.py": {
     "source_sha256": "bbc8256e5d4f427fc6df50a4f28c5fc1a7d2764ea01e2b5eb12cd9fb27713f86",
     "run_recorded_sha256": "bbc8256e5d4f427fc6df50a4f28c5fc1a7d2764ea01e2b5eb12cd9fb27713f86",
     "matches_recorded_training_source": true,
-    "release_edits": [],
-    "release_sha256": "bbc8256e5d4f427fc6df50a4f28c5fc1a7d2764ea01e2b5eb12cd9fb27713f86"
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
+    ],
+    "release_sha256": "aaed3a01e98fc2da33694989196cfb2edb9625af20e46d33d52627f6a2f819db"
   },
-  "utility/h3_training_schedule.py": {
+  "cocode_world/reference.py": {
+    "source_sha256": "19d5a9c05014eea6a1efac8141b5b7c6bcfeb5b00f1a1acdb1331c353adcfcde",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
+    ],
+    "release_sha256": "eb7c979dc138f8ef0935869c8572353ba7da12928ef99f3f679cab72664f6e86"
+  },
+  "cocode_world/schedule.py": {
     "source_sha256": "2e3e88fff0404e8d8d32f983986e26b051d0cab5aed889ce3da9af5d31490605",
     "run_recorded_sha256": "2e3e88fff0404e8d8d32f983986e26b051d0cab5aed889ce3da9af5d31490605",
     "matches_recorded_training_source": true,
     "release_edits": [
-      "Use repository-relative evaluation package default."
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
     ],
-    "release_sha256": "7f9f4bcfbfdab90596eed7bd7cd77cf095b51a20b66ef321102623580c9abeb9"
+    "release_sha256": "fce16ba6912bd10bdffd50dd6660d94851a39ca648307c963e90dada749d32ad"
   },
-  "utility/measure_h3_processed720.py": {
-    "source_sha256": "77e8d9592b11e101995970d72f2024a99ae9cc4cbb32a1b51ecfaa36670d9207",
-    "run_recorded_sha256": "77e8d9592b11e101995970d72f2024a99ae9cc4cbb32a1b51ecfaa36670d9207",
+  "cocode_world/decfg.py": {
+    "source_sha256": "ccd3f59f3f780a79415c35af0a00736ca166e1f3489a7a52ffb662bf3271f9c6",
+    "run_recorded_sha256": "ccd3f59f3f780a79415c35af0a00736ca166e1f3489a7a52ffb662bf3271f9c6",
     "matches_recorded_training_source": true,
     "release_edits": [
-      "Use a repository-relative default model directory."
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
     ],
-    "release_sha256": "a3f2a4a24b9fa7cdfdee2980f4587a0de9c1834bce3493c1caf668f86e74178a"
+    "release_sha256": "ccd3f59f3f780a79415c35af0a00736ca166e1f3489a7a52ffb662bf3271f9c6"
   },
-  "utility/cache_h3_ref_video.py": {
-    "source_sha256": "9437c0353f92c5fe1719ea2025e440942db21455abe1fd91c11415b6b89b428f",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [
-      "Use a repository-relative default model directory."
-    ],
-    "release_sha256": "b6da49386313b4126d19ad5564305e1249cf538e17b701140a4bfe68eaa3176e"
-  },
-  "utility/h3_ref_video_reference.py": {
-    "source_sha256": "19d5a9c05014eea6a1efac8141b5b7c6bcfeb5b00f1a1acdb1331c353adcfcde",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "19d5a9c05014eea6a1efac8141b5b7c6bcfeb5b00f1a1acdb1331c353adcfcde"
-  },
-  "verification/local_diffusers.py": {
-    "source_sha256": "ae6ac9d4097ae91d695b57f006acf3243a0d69227cad95ff8b87e66d43b983a3",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "ae6ac9d4097ae91d695b57f006acf3243a0d69227cad95ff8b87e66d43b983a3"
-  },
-  "verification/hf_hub_compat.py": {
-    "source_sha256": "2cf90d36826f6421d93781c80e5ebe6afdce20c25f7ab572e79c244d4cc07e30",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "2cf90d36826f6421d93781c80e5ebe6afdce20c25f7ab572e79c244d4cc07e30"
-  },
-  "utility/h3_distill/packed_video.py": {
-    "source_sha256": "d3d50048b5fdfffb139ee8e99f0cbdb2a80a51f60c313347aaaa8e29d98aeb4c",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "d3d50048b5fdfffb139ee8e99f0cbdb2a80a51f60c313347aaaa8e29d98aeb4c"
-  },
-  "utility/h3_distill/checkpoint.py": {
-    "source_sha256": "a57397c23b7e4abd7f2ef27d9c2b3b48e3075c528aa763c92734f9215d200465",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "a57397c23b7e4abd7f2ef27d9c2b3b48e3075c528aa763c92734f9215d200465"
-  },
-  "utility/h3_distill/consistency.py": {
-    "source_sha256": "a19f97cd3d2bada9ce8c7c139392e2830a9ef22cded5e85d531c5339464b9e32",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "a19f97cd3d2bada9ce8c7c139392e2830a9ef22cded5e85d531c5339464b9e32"
-  },
-  "utility/h3_distill/dcm.py": {
-    "source_sha256": "25013620cbd78796951c9bd681443363cc03d8f43e15a3a3e32728f118f6028f",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "25013620cbd78796951c9bd681443363cc03d8f43e15a3a3e32728f118f6028f"
-  },
-  "utility/h3_distill/dmd_checkpoint.py": {
-    "source_sha256": "ae9d0fba54030f9aee4ae51559c8f8f74c3f33cb6c8ceff7bda791ceeb3f9412",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "ae9d0fba54030f9aee4ae51559c8f8f74c3f33cb6c8ceff7bda791ceeb3f9412"
-  },
-  "utility/h3_distill/role_adapters.py": {
-    "source_sha256": "ffef22d1a6e27c55674e172967bd6bf8d75da0583bf116ca7403d65a4831d935",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "ffef22d1a6e27c55674e172967bd6bf8d75da0583bf116ca7403d65a4831d935"
-  },
-  "utility/h3_distill/rcm_adapter.py": {
-    "source_sha256": "c2d3d7c66ad5c19de739bdb453ef11823d422b5a6a66cbb3b283cfa403d299ca",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "c2d3d7c66ad5c19de739bdb453ef11823d422b5a6a66cbb3b283cfa403d299ca"
-  },
-  "utility/h3_distill/dmd.py": {
-    "source_sha256": "39b8afac1bb414922ab34de50a28ec6169ad7fb014129e864f7befe52955f52e",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "39b8afac1bb414922ab34de50a28ec6169ad7fb014129e864f7befe52955f52e"
-  },
-  "utility/h3_distill/__init__.py": {
-    "source_sha256": "839c139a557c42a93226e5bb182290641e0611ffe11ad3a73a687bf395e2ae7e",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "839c139a557c42a93226e5bb182290641e0611ffe11ad3a73a687bf395e2ae7e"
-  },
-  "utility/h3_distill/schedules.py": {
-    "source_sha256": "95948e9e228cdb33139cc6defef2cb78758ac8abb1077d28ab759aee32e14366",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "95948e9e228cdb33139cc6defef2cb78758ac8abb1077d28ab759aee32e14366"
-  },
-  "utility/h3_distill/dfd.py": {
-    "source_sha256": "78e3fcc1d3a4d214e6320995e51468f186a38e3db8f823070ba0ba91563bf331",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "78e3fcc1d3a4d214e6320995e51468f186a38e3db8f823070ba0ba91563bf331"
-  },
-  "utility/h3_distill/sampler.py": {
-    "source_sha256": "6dbac2d63097c0d7b72beed8c59a992ca10d2301887bb15dc74d04b94109b8b8",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "6dbac2d63097c0d7b72beed8c59a992ca10d2301887bb15dc74d04b94109b8b8"
-  },
-  "utility/h3_distill/attention.py": {
-    "source_sha256": "3aa9d7dea9cdc33b34e13079b8e9ce64c015773eb20fbfd85081178314844909",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "3aa9d7dea9cdc33b34e13079b8e9ce64c015773eb20fbfd85081178314844909"
-  },
-  "utility/h3_distill/data/cached_video.py": {
-    "source_sha256": "fd3f531364dc91e270f3b89ea0e20ab9f622f4e7e4c546fe603d5f9d195b92e0",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "fd3f531364dc91e270f3b89ea0e20ab9f622f4e7e4c546fe603d5f9d195b92e0"
-  },
-  "utility/h3_distill/data/__init__.py": {
-    "source_sha256": "603ce64f369406c1c568b845ceeb849aa89bbf2d4b700c7e996fee653e382838",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [],
-    "release_sha256": "603ce64f369406c1c568b845ceeb849aa89bbf2d4b700c7e996fee653e382838"
-  },
-  "data/worldscene_h3_ref_depth_v1/tools/common.py": {
-    "source_sha256": "a91aefddb4d4d29beaea9e9c0fb1f77081578e50db4e65b7ad834ae870ad9399",
-    "run_recorded_sha256": null,
-    "matches_recorded_training_source": null,
-    "release_edits": [
-      "Retain only atomic I/O and hash helpers used by caching.",
-      "Remove extra blank lines at end of file."
-    ],
-    "release_sha256": "5ec69a821d92e12f0c3464c873b4811491eb1e3beeca36d9503906d0f14627ba"
-  },
-  "inference/rollout_long.py": {
-    "source_sha256": "0bc117af3a1f67af3588390f4c3f7293b5f11ac0edbe6886cad99f6bd9c05859",
-    "release_edits": [
-      "Relocate inference entrypoints to the public repository.",
-      "Use selected case count and published checkpoint fingerprints instead of private training-manifest and 100-case dependencies; default to one node."
-    ],
-    "release_sha256": "1bc852d8d476fb812dd100185c45ccec5b320d0f0cce5f819df7125b08b8bd05"
-  },
-  "inference/long_model_helpers.py": {
-    "source_sha256": "c2384c7e42e3bef3513f143a166703807a7a126b949f7c5609114a21a43f1730",
-    "release_edits": [
-      "Relocate inference entrypoints to the public repository."
-    ],
-    "release_sha256": "c2384c7e42e3bef3513f143a166703807a7a126b949f7c5609114a21a43f1730"
-  },
-  "utility/prompts/h3_ref_video_multiplayer_system.txt": {
-    "source_sha256": "d87884dfc5823b70fc468e7a0118eb54734fddd2eb595cda037a34541d51f89f",
-    "run_recorded_sha256": "d87884dfc5823b70fc468e7a0118eb54734fddd2eb595cda037a34541d51f89f",
-    "matches_recorded_training_source": true,
-    "release_edits": [],
-    "release_sha256": "d87884dfc5823b70fc468e7a0118eb54734fddd2eb595cda037a34541d51f89f"
-  },
-  "verification/test_h3_decfg_adapter.py": {
-    "source_sha256": "3429188e8060737ebae0af30bdd060b0153b1114744c3255a1c40a47e860b274",
-    "run_recorded_sha256": "3429188e8060737ebae0af30bdd060b0153b1114744c3255a1c40a47e860b274",
+  "cocode_world/cache.py": {
+    "source_sha256": "f464270ed5f6390ce46034d5be760b6c3c7c1101f9de4fd07c10af7e5d78ade8",
+    "run_recorded_sha256": "f464270ed5f6390ce46034d5be760b6c3c7c1101f9de4fd07c10af7e5d78ade8",
     "matches_recorded_training_source": true,
     "release_edits": [
-      "Use a repository-relative default model directory."
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
     ],
-    "release_sha256": "b52e5ce0faa1cea6ee2833d4e680e8d581e45e2a6f28eecc408c95d3225fe661"
+    "release_sha256": "c302c5f2288c6cd90b4e7f2e965d10daed169447f2e26c43786dcae3d5f219eb"
   },
-  "verification/test_h3_training_schedule.py": {
-    "source_sha256": "345b4320d702128f9fe10783002eacf0aa03d3abccb12238140a3014a06873cb",
-    "run_recorded_sha256": "345b4320d702128f9fe10783002eacf0aa03d3abccb12238140a3014a06873cb",
-    "matches_recorded_training_source": true,
-    "release_edits": [
-      "Exclude the private SSH-cluster orchestration test.",
-      "Remove extra blank lines at end of file."
-    ],
-    "release_sha256": "deab5cbb832cabe50c9ae2472232152fc772bd639413530144b45072b1f27b9a"
-  },
-  "infer_h3_ref_video_lora.py": {
+  "cocode_world/inference/video.py": {
     "source_sha256": "5a668d2b18aea51edea8f2c885cd3688bc905a6e591cec4519c52a6689e4166f",
     "run_recorded_sha256": null,
     "matches_recorded_training_source": null,
     "release_edits": [
-      "Extract unchanged decoder, video-output, component-hash and LoRA-pattern helpers from the established inference entrypoint; omit its unrelated command-line runner.",
-      "Remove extra blank lines at end of file."
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
     ],
     "release_sha256": "5bbadb9ee9bd03ff6125e039ed7f76a3bc421263f6dd394ec7b471b17e6d0496"
+  },
+  "cocode_world/inference/loading.py": {
+    "source_sha256": "c2384c7e42e3bef3513f143a166703807a7a126b949f7c5609114a21a43f1730",
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
+    ],
+    "release_sha256": "d211da6233a5888aee10ad213206be63de49134f515ae6c6c03dd18ba3a43d98"
+  },
+  "cocode_world/inference/rollout.py": {
+    "source_sha256": "0bc117af3a1f67af3588390f4c3f7293b5f11ac0edbe6886cad99f6bd9c05859",
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
+    ],
+    "release_sha256": "f12975729f6acbdb87a0e78517d05b8d35705818026b812e945c9e7d67888bea"
+  },
+  "cocode_world/prompts/system.txt": {
+    "source_sha256": "d87884dfc5823b70fc468e7a0118eb54734fddd2eb595cda037a34541d51f89f",
+    "run_recorded_sha256": "d87884dfc5823b70fc468e7a0118eb54734fddd2eb595cda037a34541d51f89f",
+    "matches_recorded_training_source": true,
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
+    ],
+    "release_sha256": "d87884dfc5823b70fc468e7a0118eb54734fddd2eb595cda037a34541d51f89f"
+  },
+  "tests/test_decfg.py": {
+    "source_sha256": "3429188e8060737ebae0af30bdd060b0153b1114744c3255a1c40a47e860b274",
+    "run_recorded_sha256": "3429188e8060737ebae0af30bdd060b0153b1114744c3255a1c40a47e860b274",
+    "matches_recorded_training_source": true,
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
+    ],
+    "release_sha256": "4779a236274ff27116eec1b58657b515031e3641cd3c3cb3500acfd0b3ef207e"
+  },
+  "tests/test_schedule.py": {
+    "source_sha256": "345b4320d702128f9fe10783002eacf0aa03d3abccb12238140a3014a06873cb",
+    "run_recorded_sha256": "345b4320d702128f9fe10783002eacf0aa03d3abccb12238140a3014a06873cb",
+    "matches_recorded_training_source": true,
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
+    ],
+    "release_sha256": "ba6e78e6bcf13d3393fcd4d707d9769ac4201a6a2ee5af0692e7595dedc49356"
+  },
+  "cocode_world/ema.py": {
+    "source_sha256": "c2d3d7c66ad5c19de739bdb453ef11823d422b5a6a66cbb3b283cfa403d299ca",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Extract the unchanged EMA implementation."
+    ],
+    "release_sha256": "0b89599b085477c7373cac6cb918095dc0437ba8868dacc3063f29e9dda89663"
+  },
+  "cocode_world/distributed.py": {
+    "source_sha256": "25013620cbd78796951c9bd681443363cc03d8f43e15a3a3e32728f118f6028f",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Extract unchanged context-parallel gradient reduction."
+    ],
+    "release_sha256": "0ee29ad76081f7c7ee260024e76c887d0fc4ff594d11ded9374f0d2cd84aa1f7"
+  },
+  "cocode_world/flow.py": {
+    "source_sha256": "a19f97cd3d2bada9ce8c7c139392e2830a9ef22cded5e85d531c5339464b9e32",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Retain the flow operations used by training and inference."
+    ],
+    "release_sha256": "f279d1a039f93fbdde4ccf4f2d55cd6f478c9bd9c2bc50f5ee35570f5d735e1e"
+  },
+  "cocode_world/noise.py": {
+    "source_sha256": "95948e9e228cdb33139cc6defef2cb78758ac8abb1077d28ab759aee32e14366",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Retain the two noise schedule functions."
+    ],
+    "release_sha256": "a23326c4d03e7811e094910942581b05e8ab35f28cab84368a8d029d890c69e9"
+  },
+  "cocode_world/layout.py": {
+    "source_sha256": "d3d50048b5fdfffb139ee8e99f0cbdb2a80a51f60c313347aaaa8e29d98aeb4c",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
+    ],
+    "release_sha256": "887613b5a05514c121002d37ae533e270381547c16251e5929aaf07178e3b8ad"
+  },
+  "cocode_world/io.py": {
+    "source_sha256": "a91aefddb4d4d29beaea9e9c0fb1f77081578e50db4e65b7ad834ae870ad9399",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Organize the implementation by public training and inference responsibilities."
+    ],
+    "release_sha256": "9cac7bc12ea4f0b08584fff323c0829cdfefced5a88d8656166c72a08ee3f7d1"
+  },
+  "cocode_world/video.py": {
+    "source_sha256": "77e8d9592b11e101995970d72f2024a99ae9cc4cbb32a1b51ecfaa36670d9207",
+    "run_recorded_sha256": "77e8d9592b11e101995970d72f2024a99ae9cc4cbb32a1b51ecfaa36670d9207",
+    "matches_recorded_training_source": true,
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Keep the input decoding and reference preparation functions; omit capacity-probe commands."
+    ],
+    "release_sha256": "f6dba5a96170e0b86da8f772d4ed96fadc1644546c0036915f3d7d9ee568574f"
+  },
+  "cocode_world/conditioning.py": {
+    "source_sha256": "9437c0353f92c5fe1719ea2025e440942db21455abe1fd91c11415b6b89b428f",
+    "run_recorded_sha256": null,
+    "matches_recorded_training_source": null,
+    "release_edits": [
+      "Use portable paths and public package names.",
+      "Extract the conditioning helpers used at 720p and pass packed-row counts explicitly."
+    ],
+    "release_sha256": "12314436e50c30d9df0c0dd90ce19fa6fa366d26a1ad4726faabd4d4bee2fc6d"
   }
 }

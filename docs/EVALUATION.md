@@ -12,16 +12,16 @@ python scripts/download_models.py cocode
 python scripts/verify_release.py --decode-videos
 python scripts/prepare_evaluation.py --case-id case_01 --output-dir cache/eval_inputs
 
-python utility/cache_h3_processed720.py prepare \
+python scripts/cache.py prepare \
   --manifest cache/eval_inputs/manifest.jsonl --output-dir cache/eval_prepared \
   --model-root models/MiniMax-H3 --compact-proxy --preserve-system-prompt
-python utility/cache_h3_processed720.py text \
+python scripts/cache.py text \
   --manifest cache/eval_prepared/raw_manifest.jsonl --output-dir cache/eval \
   --model-root models/MiniMax-H3 --preserve-system-prompt
-python utility/cache_h3_processed720.py vae \
+python scripts/cache.py vae \
   --manifest cache/eval_prepared/raw_manifest.jsonl --output-dir cache/eval \
   --model-root models/MiniMax-H3 --preserve-system-prompt
-python utility/cache_h3_processed720.py merge \
+python scripts/cache.py merge \
   --manifest cache/eval_prepared/raw_manifest.jsonl --output-dir cache/eval \
   --model-root models/MiniMax-H3 --preserve-system-prompt
 ```

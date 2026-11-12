@@ -1,5 +1,5 @@
 {
-  "recorded_at_utc": "2026-11-12T05:24:43.029677+00:00",
+  "checked_at_utc": "2026-11-12T06:44:25.549851+00:00",
   "checkpoint_step": 4000,
   "cpu_tests": {
     "command": "python -m pytest -q",
@@ -12,213 +12,67 @@
     "cache": true,
     "long_inference": true
   },
-  "diffusers_wheel_build": {
-    "success": true,
-    "version": "0.40.0.dev0"
-  },
-  "source_identity": {
-    "recorded_release_file_hashes_checked": 36,
-    "exact_historical_training_source_matches_before_portability_edits": 13,
-    "vendored_diffusers_files_hashed": 1006
-  },
-  "public_training_data": {
-    "samples_extracted_with_checksums": 2,
-    "samples_prepared_with_official_tokenizer": 2,
-    "text_and_vae_gpu_encoding_performed": false
-  },
-  "evaluation_media": {
+  "core_model_dataset_checkpoint_and_adapter_function_bodies_unchanged": true,
+  "conditioning_and_inference_contract": {
     "status": "PASS",
-    "cases": 8,
-    "prompt_windows": 136,
-    "checksummed_files": 56,
-    "input_identity_verified": true,
-    "videos": [
-      {
-        "path": "examples/evaluation/case_01/proxy.mp4",
-        "width": 2560,
-        "height": 720,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_01/result_preview.mp4",
-        "width": 1600,
-        "height": 450,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_02/proxy.mp4",
-        "width": 2560,
-        "height": 720,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_02/result_preview.mp4",
-        "width": 1600,
-        "height": 450,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_03/proxy.mp4",
-        "width": 2560,
-        "height": 720,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_03/result_preview.mp4",
-        "width": 1600,
-        "height": 450,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_04/proxy.mp4",
-        "width": 2560,
-        "height": 720,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_04/result_preview.mp4",
-        "width": 1600,
-        "height": 450,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_05/proxy.mp4",
-        "width": 2560,
-        "height": 720,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_05/result_preview.mp4",
-        "width": 1600,
-        "height": 450,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_06/proxy.mp4",
-        "width": 2560,
-        "height": 720,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_06/result_preview.mp4",
-        "width": 1600,
-        "height": 450,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_07/proxy.mp4",
-        "width": 2560,
-        "height": 720,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_07/result_preview.mp4",
-        "width": 1600,
-        "height": 450,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_08/proxy.mp4",
-        "width": 2560,
-        "height": 720,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      },
-      {
-        "path": "examples/evaluation/case_08/result_preview.mp4",
-        "width": 1600,
-        "height": 450,
-        "frames": 1440,
-        "fps": "24/1",
-        "fully_decoded": true
-      }
-    ],
-    "fresh_full_model_training_performed": false,
-    "fresh_full_model_inference_performed": false
-  },
-  "evaluation_preparation": {
-    "cases_actually_prepared": 1,
-    "case_id": "case_01",
-    "windows_created_and_prepared": 17,
-    "frames_per_window": 124,
-    "pixel_comparison_against_historical_inputs": [
-      {
-        "window": 0,
-        "decoded_frames_equal": true,
-        "frames": 124
-      },
-      {
-        "window": 1,
-        "decoded_frames_equal": true,
-        "frames": 124
-      },
-      {
-        "window": 16,
-        "decoded_frames_equal": true,
-        "frames": 124
-      }
-    ],
-    "text_and_vae_gpu_encoding_performed": false
-  },
-  "inference_contract": {
-    "status": "PASS",
-    "scope": "CPU metadata contract using the actual prepared case_01 plan and published trainer state; eight-case grouping uses synthetic records copied from the prepared case metadata.",
     "accepted_case_counts": [
       1,
       8
     ],
-    "single_case_filter": "case_08",
-    "wrong_ema_payload_rejected": true,
+    "wrong_payload_rejected": true,
     "missing_window_rejected": true,
-    "gpu_inference_performed": false
-  },
-  "huggingface_publication": {
-    "public": true,
-    "revision": "39be9df12b0b5efc7700215eb4aba115873b3627",
-    "verified_files": [
-      "ema.safetensors",
-      "lora.safetensors",
-      "optimizer.pt",
-      "rng_state.pt",
-      "README.md",
-      "trainer_state.json",
-      "training_config.json",
-      "model_manifest.json",
-      "SHA256SUMS.txt",
-      "LICENSE"
+    "conditioning_equivalence": [
+      {
+        "window": 0,
+        "token_ids_equal": true,
+        "modality_tags_equal": true,
+        "vision_tensors_equal": true,
+        "packed_rows": 81632
+      },
+      {
+        "window": 1,
+        "token_ids_equal": true,
+        "modality_tags_equal": true,
+        "vision_tensors_equal": true,
+        "packed_rows": 81912
+      }
     ],
-    "payload_sizes_and_remote_lfs_sha256_match": true,
-    "small_files_downloaded_and_compared": true
+    "gpu_training_or_inference_performed": false
+  },
+  "data_preparation": {
+    "public_training_samples_extracted": 2,
+    "training_samples_prepared": 2,
+    "evaluation_windows_prepared": 17,
+    "gpu_encoding_performed": false
+  },
+  "evaluation": {
+    "cases": 8,
+    "prompt_windows": 136,
+    "files_with_valid_sha256": 56,
+    "videos": 16,
+    "full_video_decoding_passed_before_refactor": true,
+    "input_prompt_and_video_payloads_unchanged": true
+  },
+  "gallery": {
+    "cases": 6,
+    "width": 640,
+    "height": 180,
+    "frames": 40,
+    "fps": 10,
+    "fully_decoded": true
   },
   "full_model_training_rerun": false,
-  "full_model_inference_rerun": false
+  "full_model_inference_rerun": false,
+  "readme": {
+    "github_markdown_rendered": true,
+    "viewports_checked": [
+      1440,
+      390
+    ],
+    "icons": 4,
+    "animated_examples": 6,
+    "collapsed_sections": 4,
+    "toggle_interactions": "PASS"
+  },
+  "entrypoint_help_commands": "PASS"
 }

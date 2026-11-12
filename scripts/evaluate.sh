@@ -13,11 +13,11 @@ if [[ $# -ge 4 ]]; then extra=(--case-id "$4"); fi
 common=(--manifest "$manifest" --plan "$plan" --output-dir "$output"
   --model-root "${MODEL_ROOT:-models/MiniMax-H3}"
   --checkpoint "${CHECKPOINT:-checkpoints/step-004000}" --num-forwards 30 --nodes 1)
-torchrun --standalone --nproc_per_node=8 inference/rollout_long.py \
+torchrun --standalone --nproc_per_node=8 scripts/evaluate.py \
   --stage w0 "${common[@]}" "${extra[@]}"
 for index in $(seq 1 16); do
-  python inference/rollout_long.py --stage prefix --window-index "$index" "${common[@]}" "${extra[@]}"
-  torchrun --standalone --nproc_per_node=8 inference/rollout_long.py \
+  python scripts/evaluate.py --stage prefix --window-index "$index" "${common[@]}" "${extra[@]}"
+  torchrun --standalone --nproc_per_node=8 scripts/evaluate.py \
     --stage continuation --window-index "$index" "${common[@]}" "${extra[@]}"
 done
-python inference/rollout_long.py --stage render "${common[@]}" "${extra[@]}"
+python scripts/evaluate.py --stage render "${common[@]}" "${extra[@]}"

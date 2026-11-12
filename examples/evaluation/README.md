@@ -1,6 +1,6 @@
 # Eight step-4000 evaluation examples
 
-These cases are selected from the original CoCode-World step-4000 EMA results shown on the project page. Each directory contains the **actual edited first-frame input** (`first_frame.png`), **original 60-second Proxy555 input** (`proxy.mp4`), first-window prompt and system prompt, all **17 window prompts** in `prompts.json`, the inference seed, and a compressed preview of the recorded result.
+These cases are selected from the original CoCode-World step-4000 EMA results shown on the project page. Each directory contains the **actual edited first-frame input** (`first_frame.png`), **original 60-second shared-scene proxy input** (`proxy.mp4`), first-window prompt and system prompt, all **17 window prompts** in `prompts.json`, the inference seed, and a compressed preview of the recorded result.
 
 The first-frame input is an appearance reference; generated frame 0 is not hard-clamped to it. The first-window prompt alone does not describe the complete 60 seconds: use the full window schedule to reproduce the long result. A small context-parallel padding suffix may be appended by the original text-presentation code when caching.
 

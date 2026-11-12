@@ -17,7 +17,7 @@ if (( nnodes > 1 )); then
 fi
 exec torchrun --nnodes="$nnodes" --nproc_per_node=8 --node_rank="$node_rank" \
   --master_addr="${MASTER_ADDR:-127.0.0.1}" --master_port="${MASTER_PORT:-29500}" \
-  train_h3_ref_video_lora.py \
+  scripts/train.py \
   --manifest "$manifest" --output-dir "$output" --model-root "$model_root" \
   --decfg-adapter "$decfg" --decfg-adapter-scale 1 \
   --context-parallel-degree 8 --steps "${STEPS:-4000}" \

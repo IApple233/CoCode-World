@@ -7,7 +7,7 @@
   "training_weights": "lora.safetensors",
   "tensor_files_preserved_byte_for_byte": true,
   "original_trainer_state_sha256": "e94a5028d85b839114494fbf4105c3025fdc897eeb1074aca1fc6e760ad27b7d",
-  "metadata_normalization": "Only local filesystem paths in trainer_state.json have been replaced with portable paths.",
+  "metadata_normalization": "Trainer metadata uses portable model and adapter paths.",
   "payloads": {
     "ema.safetensors": {
       "bytes": 1383687680,

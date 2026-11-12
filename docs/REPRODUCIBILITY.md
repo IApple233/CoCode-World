@@ -1,13 +1,11 @@
-# Release provenance
+# Checkpoint and validation
 
-This release identifies `h3_gta555_decfg_20261013T190132Z`, **step 4000**. All four tensor/state payloads retain their original bytes and [checksums](../provenance/checkpoint.json). The published trainer metadata replaces three private filesystem paths with portable paths; its original file hash is recorded separately.
+The released checkpoint is **CoCode-World step 4000**. Inference uses its EMA LoRA with the official MiniMax-H3 base. Tensor and optimizer payload checksums are listed in [checkpoint.json](../provenance/checkpoint.json).
 
-Core training files were recovered from historical snapshots and compared with the original run's source hashes. [source_files.json](../provenance/source_files.json) records the source hashes, exact historical matches, release edits, and final hashes. The training entrypoint and core model/data/checkpoint/DeCFG/sampler/native-cache files match before portable-path changes. Shared helpers without recorded historical hashes are marked accordingly. The vendored Diffusers runtime is separately hashed; no unavailable upstream Git revision is claimed.
+The original training used 8,552 clips; the public dataset contains 5,000 selected clips. The released recipe supports further training, but the public subset does not reproduce the original sample stream. Optimizer resume requires matching data and training settings.
 
-Public packaging adds dataset extraction, model download, launchers, and evaluation preparation. The long-inference contract accepts the selected case count and checks published checkpoint fingerprints directly, replacing dependencies on a private 100-case suite and training-manifest file. Its denoising, latent-prefix continuation, and decoder algorithms are preserved. Later actor-attention, pose-attention, and DMD models are not used.
+The eight evaluation cases retain their input images, proxy videos, prompts, and seeds. Result previews preserve all 1,440 frames at a compressed resolution of 1600 × 450. They are qualitative examples rather than lossless metric references. Hardware, kernels, and video encoding can affect exact output equality.
 
-The public 5000-clip dataset is a subset of the original 8552 clips. Exact retraining to the released weights is not claimed. Saved optimizer state does not replace the original sample stream and settings.
+Source fingerprints are recorded in [source_files.json](../provenance/source_files.json). The package separates training, conditioning, and inference without changing the released model architecture or tensor names. The bundled Diffusers runtime has its own [file manifest](../provenance/diffusers_files.json).
 
-The eight cases preserve recorded input references, Proxy files, seeds, and window prompts. Result previews are the project page's compressed encodes, not lossless outputs for metric computation. Each case records the original full-resolution output hash.
-
-Checks cover CPU conversion/training/checkpoint/sampling behavior, public-data extraction, complete 17-window input preparation, prompt/seed/hash identity, and full decoding of all released videos. See [release_validation.json](../provenance/release_validation.json) for the measured checks and their scope. Full-model GPU training and inference were not rerun during packaging.
+Validation covers CPU training/checkpoint behavior, data preparation, input checksums, and video decoding. The results and scope are recorded in [release_validation.json](../provenance/release_validation.json). Full-model GPU training and inference were not rerun during repository preparation.

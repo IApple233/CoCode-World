@@ -12,7 +12,7 @@ import tarfile
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from utility.h3_ref_video_prompt import DEFAULT_TASK_PROMPT, SYSTEM_PROMPT, SYSTEM_PROMPT_SHA256
+from cocode_world.prompting import DEFAULT_TASK_PROMPT, SYSTEM_PROMPT, SYSTEM_PROMPT_SHA256
 
 
 def extract_member(archive, name: str, destination: Path, expected: str) -> None:
@@ -40,7 +40,7 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dataset-dir", type=Path, required=True)
     parser.add_argument("--output-dir", type=Path, required=True)
-    parser.add_argument("--limit", type=int, help="Extract a prefix for a preprocessing smoke check")
+    parser.add_argument("--limit", type=int, help="Limit the number of samples to prepare")
     args = parser.parse_args()
     if args.limit is not None and args.limit < 1:
         parser.error("--limit must be positive")
@@ -73,7 +73,7 @@ def main() -> None:
                 caption = files["caption_v1"].read_text().strip()
                 if not caption or caption != row["caption"].strip():
                     raise ValueError(f"Caption differs from the release manifest: {sid}")
-                item = dict(schema_version="gta-minimax-h3-split-screen-v1", sample_id=sid,
+                item = dict(schema_version="cocode-world-raw-v1", sample_id=sid,
                             num_frames=124, fps=24.0, height=720, width=2560,
                             split_screen=row["split_screen"], source=row["source"],
                             reference_image_source="target_split_screen_frame_000000",

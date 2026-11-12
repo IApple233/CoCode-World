@@ -87,7 +87,7 @@ def main() -> None:
             caption = output / "captions" / sid / f"window_{i:02d}.txt"
             caption.parent.mkdir(parents=True, exist_ok=True)
             caption.write_text(window["scene_description"] + "\n")
-            row = dict(schema_version="gta-minimax-h3-split-screen-v1", sample_id=f"{sid}--w{i:02d}",
+            row = dict(schema_version="cocode-world-raw-v1", sample_id=f"{sid}--w{i:02d}",
                        base_sample_id=sid, num_frames=124, fps=24.0, height=720, width=2560,
                        source_canvas=[720, 2560],
                        split_screen=dict(layout="horizontal", left_agent="agent_000", right_agent="agent_001",
@@ -97,7 +97,7 @@ def main() -> None:
                        caption_path=str(caption), caption_sha256=sha256(caption),
                        scene_description=window["scene_description"], prompt=window["task_prompt"],
                        system_prompt=window["system_prompt"], system_prompt_sha256=window["system_prompt_sha256"],
-                       eval_seeds=[case["seed"]], proxy_version="555", window_index=i, window_count=17,
+                       eval_seeds=[case["seed"]], proxy_format="shared-scene-v1", window_index=i, window_count=17,
                        inference_target_placeholder=True)
             # This cache schema includes a target slot. During inference its clean
             # tensor is ignored: denoising starts from case-seeded random noise.
@@ -112,7 +112,7 @@ def main() -> None:
         print(f"Prepared {sid}: 17 verified windows", flush=True)
     checkpoint = json.loads((ROOT / "configs/step-004000.json").read_text())
     payloads = json.loads((ROOT / "provenance/checkpoint.json").read_text())["payloads"]
-    plan = dict(schema_version="gta-h3-action100-proxy555-latent39-full60s-v1", proxy_version="555",
+    plan = dict(schema_version="cocode-world-long-video-v1", proxy_format="shared-scene-v1",
                 window_frames=124, overlap_frames=39, stride_frames=85, fixed_prefix_latents=12,
                 window_count=17, case_count=len(plan_cases), output_frames=1440,
                 rows=[r["sample_id"] for r in rows], cases=plan_cases,

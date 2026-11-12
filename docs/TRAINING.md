@@ -10,6 +10,25 @@ Fuse the pretrained DeCFG LoRA into the frozen Ref2VA transformer at scale 1, th
 
 ## Input data
 
+```bash
+hf download iapple1/CoCode-World-Data --repo-type dataset \
+  --include 'train/*' 'manifests/train.jsonl' --local-dir datasets/CoCode-World-Data
+python scripts/prepare_training_data.py \
+  --dataset-dir datasets/CoCode-World-Data --output-dir datasets/prepared
+python scripts/cache.py prepare \
+  --manifest datasets/prepared/manifest.jsonl --output-dir cache/prepared \
+  --model-root models/MiniMax-H3 --compact-proxy
+
+# Run sequentially; each encoder stage uses the first visible GPU.
+python scripts/cache.py text \
+  --manifest cache/prepared/raw_manifest.jsonl --output-dir cache/train --model-root models/MiniMax-H3
+python scripts/cache.py vae \
+  --manifest cache/prepared/raw_manifest.jsonl --output-dir cache/train --model-root models/MiniMax-H3
+python scripts/cache.py merge \
+  --manifest cache/prepared/raw_manifest.jsonl --output-dir cache/train --model-root models/MiniMax-H3
+```
+
+
 `scripts/prepare_training_data.py` reads the public `manifests/train.jsonl`, extracts target/proxy/caption files from the TAR shards, verifies their checksums, and creates the native paired manifest. Use `--limit 2` for a small preprocessing check.
 
 For custom data, use that script's JSONL output as the schema reference. Supply unique sample IDs, target/proxy paths and SHA256 hashes, captions and caption-file hashes, 124 frames at 24 FPS, 2560 × 720 geometry, and horizontal split-screen metadata (`agent_000` left, `agent_001` right). Set `reference_image_source` to `target_split_screen_frame_000000`. Preparation supplies the unchanged task/system prompts. Regenerate local manifests after moving data to new paths. Preserve synchronized camera timing and keep evaluation source sequences outside the training split.
@@ -17,6 +36,21 @@ For custom data, use that script's JSONL output as the schema reference. Supply 
 `--compact-proxy` in the cache preparation stage is required: source indices are `0,4,...,120,123`, retaining the source timeline. Proxy pixels are resized to 1280 × 360 and padded to 1280 × 384. Target/image reference use edge-padded 2560 × 736 canvases. Qwen hidden layer 50 supplies text features.
 
 The `text` and `vae` stages can each use independent workers via `--rank R --world-size N`, shared output paths, and per-worker `CUDA_VISIBLE_DEVICES`. Finish all text workers before starting VAE workers, then run `merge` once. Keep all paths, manifests, and `--context-parallel-degree 8` identical across workers. Merge verifies the cache and writes `manifest.validation.json`. The launcher requires this validated cache.
+
+## Launch
+
+For the recorded CP8 × DP4 topology, run this on **each of four nodes**, with shared paths and `NODE_RANK` set to `0`, `1`, `2`, or `3`:
+
+```bash
+export NNODES=4
+export NODE_RANK=0                  # Change on each node.
+export MASTER_ADDR=NODE_0_ADDRESS   # Replace with node 0's reachable address.
+export MASTER_PORT=29500
+bash scripts/train.sh cache/train/manifest.jsonl outputs/cocode-world
+```
+
+
+For a single eight-GPU node, run the same launcher without the distributed environment variables.
 
 ## Recorded settings
 
@@ -45,4 +79,4 @@ STEPS=5000 bash scripts/train.sh cache/train/manifest.jsonl outputs/cocode-world
 
 Resume validates the manifest, model components, preset hash/scale, optimizer settings, topology, and sample order. The released original optimizer/RNG files support archival and matching-run use; they are not a compatible optimizer continuation on the public subset. Start a new training run when data or configuration changes.
 
-The launcher has no SSH orchestration or private host configuration. Run it on each allocated node with your scheduler. Evaluation is a separate explicit command.
+Run the launcher on each allocated node with your scheduler. Evaluation is a separate command.
