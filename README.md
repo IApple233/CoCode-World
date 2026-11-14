@@ -2,6 +2,7 @@
 <p align="center"><strong>Shared 3D Proxy Representation for Multi-Player World Models</strong></p>
 
 <p align="center">
+  <a href="https://arxiv.org/abs/2611.15602">Paper</a> &nbsp;·&nbsp;
   <img src="assets/icons/page.svg" width="18" height="18" alt=""> <a href="https://iapple233.github.io/CCW/">Project Page</a> &nbsp;·&nbsp;
   <img src="assets/icons/checkpoint.svg" width="18" height="18" alt=""> <a href="https://huggingface.co/iapple1/CoCode-World-Model">Checkpoint</a> &nbsp;·&nbsp;
   <img src="assets/icons/data.svg" width="18" height="18" alt=""> <a href="https://huggingface.co/datasets/iapple1/CoCode-World-Data">Dataset</a> &nbsp;·&nbsp;
