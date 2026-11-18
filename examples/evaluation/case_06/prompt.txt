@@ -1,9 +1,0 @@
-Generate a synchronized two-view RGB video in the visual style of <Picture 1>. Show agent_000's camera on the left and agent_001's camera on the right. Preserve the rendering style, materials, colors, lighting and character identities from <Picture 1> throughout the clip, and follow the camera movement and object trajectories in <Video 1>.
-Scene description: Overall summary:
-Two players, agent_000 and agent_001, walk through an industrial area featuring large metal silos and a wooden barn. The clip captures their movement from different camera angles as they traverse the gravel ground. The scene uses 3D animated style with soft, rounded character models and stylized textures. Bright, warm daylight casting distinct shadows. agent_000: A large, grey, furry creature with pointed ears, a white belly, and a small tail. agent_001: A white, inflatable-looking robot with a rounded body, small head, and segmented limbs.
-
-Left-view timeline (camera owner: agent_000):
-[0.00–5.17s] agent_000 and agent_001 walk forward across a gravel area towards a row of large metal silos.
-
-Right-view timeline (camera owner: agent_001):
-[0.00–5.17s] agent_000 and agent_001 walk forward on a gravel path near a wooden barn and metal silos.

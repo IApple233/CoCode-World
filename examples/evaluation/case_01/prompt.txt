@@ -1,9 +1,0 @@
-Generate a synchronized two-view RGB video in the visual style of <Picture 1>. Show agent_000's camera on the left and agent_001's camera on the right. Preserve the rendering style, materials, colors, lighting and character identities from <Picture 1> throughout the clip, and follow the camera movement and object trajectories in <Video 1>.
-Scene description: Overall summary:
-Two players, agent_000 and agent_001, ride a motorcycle together down a wide city street. Agent_001 drives the motorcycle while agent_000 sits as the passenger. The camera follows the motorcycle from behind as it travels straight through the urban environment. The scene has 2D cel-shaded animation with bold outlines and flat color fills. The reference has dusk ambient light with warm artificial light from streetlamps and building windows. agent_000: Person with dark hair, wearing a dark blue jacket, a red scarf, dark shorts, and red shoes. agent_001: Person with short reddish-brown hair, wearing an olive green jacket, light beige pants, and tan boots.
-
-Left-view timeline (camera owner: agent_000):
-[0.00–5.17s] agent_001 drives vehicle_001 down the street while agent_000 rides as a passenger behind, moving forward through the city.
-
-Right-view timeline (camera owner: agent_001):
-[0.00–5.17s] agent_001 drives vehicle_001 down the street while agent_000 rides as a passenger behind, moving forward through the city.
